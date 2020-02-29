@@ -9,5 +9,5 @@ setup(
     author='andytwoods, Isaac Weaver',
     author_email='andytwoods@gmail.com, wisaac407@gmail.com',
     description='store future tasks in the db and call them after set delays',
-	install_requires=['django-picklefield']
+    install_requires=['django-picklefield']
 )
