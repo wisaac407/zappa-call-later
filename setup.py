@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='zappa_call_later',
+    name='zappa_scheduler',
     version='1.0.3',
-    packages=['zappa_call_later'],
+    packages=['zappa_scheduler'],
     url='https://github.com/wisaac407/zappa-call-later',
     license='MIT License',
     author='andytwoods, Isaac Weaver',
