@@ -4,7 +4,7 @@ setup(
     name='zappa_scheduler',
     version='1.0.3',
     packages=['zappa_scheduler'],
-    url='https://github.com/wisaac407/zappa-call-later',
+    url='https://github.com/wisaac407/zappa-scheduler',
     license='MIT License',
     author='andytwoods, Isaac Weaver',
     author_email='andytwoods@gmail.com, wisaac407@gmail.com',

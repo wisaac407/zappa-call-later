@@ -1,11 +1,11 @@
-# zappa-call-later
+# zappa_scheduler
 
 ## Description
 A db driven way to run tasks at a future point in time, or at a regular interval, for Django Zappa projects (https://github.com/Miserlou/Zappa).
 
 ## Installation
 ```
-pip install zappa-call-later
+pip install zappa_scheduler
 ```
 To check for tasks every 4 minutes, add the below to zappa_settings.json:
  
@@ -18,7 +18,7 @@ To check for tasks every 4 minutes, add the below to zappa_settings.json:
     "keep_warm": false,
     "events": [
       {
-        "function": "zappa_call_later.zappa_check.now",
+        "function": "zappa_scheduler.zappa_check.now",
         "expression": "rate(4 minute)"
       }
     ]
