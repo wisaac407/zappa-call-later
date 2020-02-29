@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 from django.db import migrations, models
 import django.utils.timezone
 import picklefield.fields
-import zappa_call_later.models
+import zappa_scheduler.models
 
 
 class Migration(migrations.Migration):
@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
                 ('kwargs', picklefield.fields.PickledObjectField(editable=False, null=True)),
                 ('repeat', models.PositiveIntegerField(default=1)),
                 ('every', models.DurationField(blank=True, null=True)),
-                ('when_check_if_failed', models.DateTimeField(default=zappa_call_later.models.far_future_fail_timeout)),
+                ('when_check_if_failed', models.DateTimeField(default=zappa_scheduler.models.far_future_fail_timeout)),
                 ('retries', models.PositiveIntegerField(default=3)),
                 ('timeout_retries', models.PositiveIntegerField(default=2)),
                 ('problem', models.BooleanField(default=False)),
