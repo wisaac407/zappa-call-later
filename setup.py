@@ -1,4 +1,11 @@
+import pathlib
 from setuptools import setup
+
+# The directory containing this file
+HERE = pathlib.Path(__file__).parent
+
+# The text of the README file
+README = (HERE / "README.md").read_text()
 
 setup(
     name='zappa_scheduler',
@@ -8,6 +15,8 @@ setup(
     license='MIT License',
     author='andytwoods, Isaac Weaver',
     author_email='andytwoods@gmail.com, wisaac407@gmail.com',
-    description='store future tasks in the db and call them after set delays',
+    description="Store future tasks in the db and call them after set delays.",
+    long_description=README,
+    long_description_content_type="text/markdown",
     install_requires=['django-picklefield']
 )
