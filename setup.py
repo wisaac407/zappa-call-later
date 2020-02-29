@@ -1,5 +1,5 @@
 import pathlib
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -9,8 +9,8 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name='zappa_scheduler',
-    version='1.0.4',
-    packages=['zappa_scheduler'],
+    version='1.0.5',
+    packages=find_packages(".", exclude='tests'),
     url='https://github.com/wisaac407/zappa-scheduler',
     license='MIT License',
     author='andytwoods, Isaac Weaver',
