@@ -7,6 +7,4 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         check_now()
-        self.stdout.write(self.style.SUCCESS('Checked for scheduled tasks"'))
-
-
+        self.stdout.write(self.style.SUCCESS('Checked for scheduled tasks'))
