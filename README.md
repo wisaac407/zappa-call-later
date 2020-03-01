@@ -19,7 +19,7 @@ To check for tasks every 4 minutes, add the below to zappa_settings.json:
     "events": [
       {
         "function": "zappa_scheduler.zappa_check.now",
-        "expression": "rate(4 minute)"
+        "expression": "rate(4 minutes)"
       }
     ]
   }
