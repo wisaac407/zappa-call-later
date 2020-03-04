@@ -79,7 +79,9 @@ def to_check(time_threshold=timezone.now()):
     return 'to_run=' + str(to_run)+', timedout_again_to_run='+str(timedout_again_to_run)
 
 
-def check_now(timenow=timezone.now()):
+def check_now(timenow=None):
+    if timenow is None:
+        timenow = timezone.now()
 
     # what happens if there is a huge number of items and all cant be run within 30 time period?
     # perhaps batch off groups of x to zappa.async
