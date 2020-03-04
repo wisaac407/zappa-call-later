@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name='zappa_scheduler',
-    version='1.0.6',
+    version='1.0.7',
     packages=find_packages(".", exclude='tests'),
     url='https://github.com/wisaac407/zappa-scheduler',
     license='MIT License',
